@@ -126,3 +126,24 @@ console.log(`Credito ${FirstUtente.numero404()}€:`);
 console.log(`Numero chiamate effettuate ${FirstUtente.numeroChiamate}:`);
 // console.log(`Credito residuo ${FirstUtente.}:`);
 FirstUtente.azzeraChiamate();
+
+const divP = document.querySelector(".divP") as HTMLBodyElement;
+const h6 = document.querySelector("#nomeUtente") as HTMLBodyElement;
+h6.innerText = `Ciao ${FirstUtente.utente}!`;
+
+divP!.appendChild(h6);
+
+// const hMain = document.querySelector("#hMain") as HTMLBodyElement;
+// const pSaldo = document.querySelector("#pSaldo") as HTMLBodyElement;
+// pSaldo.innerText = `${FirstUtente.numero404()}€`;
+
+// hMain!.appendChild(pSaldo);
+const hMain = document.querySelector("#hMain") as HTMLBodyElement;
+const hSaldo = document.querySelector("#hSaldo") as HTMLBodyElement;
+const pSaldo = document.querySelector("#pSaldo") as HTMLBodyElement;
+
+hSaldo.innerText = `Credito:`;
+pSaldo.innerText = `${FirstUtente.numero404()}€`;
+
+hMain!.appendChild(hSaldo);
+hMain!.appendChild(pSaldo);
